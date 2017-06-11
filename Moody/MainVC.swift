@@ -101,16 +101,16 @@ class MainVC: UIViewController{
         if segmentedControl.selectedSegmentIndex == 2{
             pickerView2.isHidden = false
             
-            randomColor1.r = CGFloat(arc4random_uniform(256))
-            randomColor1.g = CGFloat(arc4random_uniform(256))
-            randomColor1.b = CGFloat(arc4random_uniform(256))
-            
-            randomColor2.r = CGFloat(arc4random_uniform(256))
-            randomColor2.g = CGFloat(arc4random_uniform(256))
-            randomColor2.b = CGFloat(arc4random_uniform(256))
+            randomColor1.r = CGFloat(drand48())
+            randomColor1.g = CGFloat(drand48())
+            randomColor1.b = CGFloat(drand48())
+        
+            randomColor2.r = CGFloat(drand48())
+            randomColor2.g = CGFloat(drand48())
+            randomColor2.b = CGFloat(drand48())
             
             pickerView1.color = UIColor(red: randomColor1.r , green: randomColor1.g, blue: randomColor1.b, alpha: 1.0)
-            pickerView1.color = UIColor(red: randomColor2.r , green: randomColor2.g, blue: randomColor2.b, alpha: 1.0)
+            pickerView2.color = UIColor(red: randomColor2.r , green: randomColor2.g, blue: randomColor2.b, alpha: 1.0)
         }
     }
     

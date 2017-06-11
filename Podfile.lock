@@ -2,17 +2,20 @@ PODS:
   - Alamofire (4.2.0)
   - BRYXBanner (0.7.1)
   - NKOColorPickerView (0.5)
+  - ReachabilitySwift (3)
 
 DEPENDENCIES:
   - Alamofire
   - BRYXBanner
   - NKOColorPickerView
+  - ReachabilitySwift (~> 3)
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   BRYXBanner: 34eabf9c6c009f187948ca78a4f3bba3767d0f04
   NKOColorPickerView: 895ca86fe5bd16f27c311ce8f5888907efee29ad
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
 
-PODFILE CHECKSUM: 81a996e8d7fafcdd2fc25a865c453d3943f19dba
+PODFILE CHECKSUM: e70bfbe3ebcc6ccf6662db084ebe0988e925108e
 
 COCOAPODS: 1.2.1
