@@ -19,18 +19,16 @@ class ViewController: UIViewController{
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     //Initialisation
-    var r : CGFloat = 0
-    var g : CGFloat = 0
-    var b : CGFloat = 0
-    var a : CGFloat = 0
-    var r1 : CGFloat = 0
-    var g1 : CGFloat = 0
-    var b1 : CGFloat = 0
-    var a1 : CGFloat = 0
-    var r2 : CGFloat = 0
-    var g2 : CGFloat = 0
-    var b2 : CGFloat = 0
-    var a2 : CGFloat = 0
+    struct color{
+        var r : CGFloat = 0
+        var g : CGFloat = 0
+        var b : CGFloat = 0
+    }
+    
+    var color1 = color(r: 0, g: 0, b: 0)
+    var color2 = color(r: 0, g: 0, b: 0)
+    var tempColor = color(r: 0, g: 0, b: 0)
+    
     var hardwareID : Double = 0
     typealias completed = () -> ()
     
@@ -61,19 +59,23 @@ class ViewController: UIViewController{
     
     @IBAction func doneButtonPressed(_ sender: Any) {
         if segmentedControl.selectedSegmentIndex == 0{
-            getColor(color: pickerView1.color)
+            color1 = getColor(color: pickerView1.color)
             singleColorCall {
                 //do something
             }
         }
         
         if segmentedControl.selectedSegmentIndex == 1{
+            color1 = getColor(color: pickerView1.color)
+            color2 = getColor(color: pickerView2.color)
             doubleColorCall {
                 //do something
             }
         }
         
         if segmentedControl.selectedSegmentIndex == 2{
+            color1 = getColor(color: pickerView1.color)
+            color2 = getColor(color: pickerView2.color)
             randomColorCall {
                 //do something
             }
@@ -98,26 +100,28 @@ class ViewController: UIViewController{
     }
     
     func singleColorCall(completed: @escaping completed){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r1)&g2=\(g1)&b2=\(b1)", method: .get).responseJSON { (response) in
+        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color1.r)&g2=\(color1.g)&b2=\(color1.b)", method: .get).responseJSON { (response) in
             let result = response.result
         }
     }
     
     func doubleColorCall(completed: @escaping completed){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r2)&g2=\(g2)&b2=\(b2)", method: .get).responseJSON { (response) in
+        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color2.r)&g2=\(color2.g)&b2=\(color2.b)", method: .get).responseJSON { (response) in
             let result = response.result
         }
     }
     
     func randomColorCall(completed: @escaping completed){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r2)&g2=\(g2)&b2=\(b2)", method: .get).responseJSON { (response) in
+        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color2.r)&g2=\(color2.g)&b2=\(color2.b)", method: .get).responseJSON { (response) in
             let result = response.result
         }
     }
     
-    func getColor(color: UIColor)->(Double, Double, Double){
-        color.getRed(&r, green: &g, blue: &b, alpha: &a)
-        return ((Double(round(r*100)/100)), Double(round(g*100)/100), Double(round(b*100)/100))
+    func getColor(color: UIColor)->color{
+        var a : CGFloat = 0.0
+        color.getRed(&tempColor.r, green: &tempColor.g, blue: &tempColor.b, alpha: &a)
+        return tempColor
+        
         
     }
     
