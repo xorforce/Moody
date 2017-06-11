@@ -9,4 +9,5 @@ target 'Moody' do
 
   pod 'NKOColorPickerView'
   pod 'Alamofire'
+  pod 'BRYXBanner'
 end

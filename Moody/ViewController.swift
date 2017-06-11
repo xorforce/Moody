@@ -101,19 +101,19 @@ class ViewController: UIViewController{
     
     func singleColorCall(completed: @escaping completed){
         Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color1.r)&g2=\(color1.g)&b2=\(color1.b)", method: .get).responseJSON { (response) in
-            let result = response.result
+            _ = response.result
         }
     }
     
     func doubleColorCall(completed: @escaping completed){
         Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color2.r)&g2=\(color2.g)&b2=\(color2.b)", method: .get).responseJSON { (response) in
-            let result = response.result
+            _ = response.result
         }
     }
     
     func randomColorCall(completed: @escaping completed){
         Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color2.r)&g2=\(color2.g)&b2=\(color2.b)", method: .get).responseJSON { (response) in
-            let result = response.result
+            _ = response.result
         }
     }
     
@@ -121,8 +121,6 @@ class ViewController: UIViewController{
         var a : CGFloat = 0.0
         color.getRed(&tempColor.r, green: &tempColor.g, blue: &tempColor.b, alpha: &a)
         return tempColor
-        
-        
     }
     
   }

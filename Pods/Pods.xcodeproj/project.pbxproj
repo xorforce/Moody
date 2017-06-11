@@ -8,111 +8,130 @@
 
 /* Begin PBXBuildFile section */
 		0E07A931FF6691F051D059B416F3CE4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC26B7630DBC051DEF5EB67231E1C97 /* Timeline.swift */; };
-		164460F79E6443E3A6EC854B5F159B66 /* Pods-Moody-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C186257AEDA4DD433632A8C0EE3EB9 /* Pods-Moody-dummy.m */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32455FEF9DAAF8C69B9D7828E64B5DDE /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C825853CD886DBD01CF5470C3EE6D43 /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 679719FD0EB7D6A0C32A736862D2313E /* nko_colormap.png */; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AF54A7D4471BB946C9295C233082F /* TaskDelegate.swift */; };
-		3C26472F8A1DE9EC37F98FED660763C0 /* NKOColorPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1104FA488103A1F6BDB33DCB1D5B0A67 /* NKOColorPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46045A900DF22CE31B3D406189AFD34D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		498FE0AB6BA876A8B8A6E9FE9CEDFEAC /* nko_brightness_guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E339D95D4397EDA98A7870C377E04ED0 /* nko_brightness_guide@2x.png */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449A1FB0809B4CF7DE8E170CE4A5A9F /* Request.swift */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0AE3EF44281924D1B3603C221483A /* DispatchQueue+Alamofire.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B98DE1AD314578AD469040448A37A /* ServerTrustPolicy.swift */; };
-		6F334BD06C1F532C5BE0C2617B538C9B /* NKOColorPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E83BF600CA06B9A1A55968011F60EDF /* NKOColorPickerView-dummy.m */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F21ECA03BF57528A410F58130F2A6C /* Timeline.swift */; };
+		139FF6DA1D05B90F2631E069C8D13832 /* BRYXBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9D022F4A3658E549525EA5550DA6BC /* BRYXBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBADAB41F566A96267A83642BEB6E90 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C825853CD886DBD01CF5470C3EE6D43 /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E22A036C048CD1886D332C5B95F26C /* nko_colormap.png */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AB975A4FAD54A99AD3AE71EF252D4 /* TaskDelegate.swift */; };
+		3C26472F8A1DE9EC37F98FED660763C0 /* NKOColorPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E02FFEB6076F7799017C57242754BBF /* NKOColorPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498FE0AB6BA876A8B8A6E9FE9CEDFEAC /* nko_brightness_guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 562D0D652B6A35F1BAFF5BB35E9711CD /* nko_brightness_guide@2x.png */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D3461DAC5E14486705DBE2931D5E80 /* Request.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BE6D0E8D70738A5CB5144C920A9B3 /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA613E1C63BD5C9148B67F11BCD4B528 /* ServerTrustPolicy.swift */; };
+		6F2B066A3A07A4763B781D059080931D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		6F334BD06C1F532C5BE0C2617B538C9B /* NKOColorPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1632A085FD95A06DEF981643C790E50 /* NKOColorPickerView-dummy.m */; };
 		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD66413EE76D411271825CFABB2AF33 /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53813787CFFFD6725A4F20876E2C4B /* Result.swift */; };
-		8322E8F339AD66542C2F8333D0BF53FD /* nko_brightness_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2D26825E3552FF639946DD5B443FBF /* nko_brightness_guide.png */; };
-		87CBFF89238B136CBCA92CFFD8A8165A /* Pods-Moody-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A200194696183357ECED58691A6FB196 /* Pods-Moody-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77AC5BD23F77DDFFAC89073E999B8494 /* Pods-Moody-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A200194696183357ECED58691A6FB196 /* Pods-Moody-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D444280384D3ABA81E694F003BCB8 /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814DFE14B19617000F83931D44771E99 /* Result.swift */; };
+		82FEA7F499BB31EDA4A18E093C5B2E01 /* Pods-Moody-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C186257AEDA4DD433632A8C0EE3EB9 /* Pods-Moody-dummy.m */; };
+		8322E8F339AD66542C2F8333D0BF53FD /* nko_brightness_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA9FBE85A7E704A565429D3C084E3B3 /* nko_brightness_guide.png */; };
 		8C5BCDB04D049C8216E06CFBFCD8C40E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
 		8D0D28F6DB779CF776B5A54DDECB8D34 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641464EFA40581BE2E99A26AB8CF748 /* AFError.swift */; };
-		9F2C7D884C5E7C626805DED90F6DD978 /* NKOColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E86DA6F31B436B463519258E46CA38 /* NKOColorPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0186ADE20196D0910F56F0A765E6 /* NetworkReachabilityManager.swift */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E60317A46F4896ECCC04C6AD0B2B62 /* Alamofire-dummy.m */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869168A7B5AD7BCA6A70B2FF27DB186 /* SessionManager.swift */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6C7AC2EEA267DDBEEDCBF7D8B5E050 /* MultipartFormData.swift */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DAECA49B511915B3F6477F74D67662 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF947BB0D417C34E9C2C43818F3B34C /* ParameterEncoding.swift */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FDED7D298D99DEA66030AD26D7F20B /* Response.swift */; };
-		E049DB979ECFC5FE6E5AC45453DC05DF /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C0F29AD8E6A698919B7462BDFBF35 /* NKOColorPickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9CEE806C686E8F80DADE5C41C8D20F37 /* BRYXBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0D2A6AB4D8ED63E18D19289F1B6788 /* BRYXBanner-dummy.m */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8999912686F22B2B5372A582F32DF5 /* AFError.swift */; };
+		9F2C7D884C5E7C626805DED90F6DD978 /* NKOColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B3F7B74DD70F27D99F7CABB886E0BB /* NKOColorPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E2E88B5AD27E2949661CC41825A3D /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E22E0038B29FB57F237EFDCCE4F7F1 /* Alamofire-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC940D4AA12C32B666802D851E702A04 /* SessionManager.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CA66026743687C3210D8EDA6AC2088 /* MultipartFormData.swift */; };
+		B94D569BD94B20CB6787A423B182CE9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009ACF694DF90E0EBC4FB200A3651FB /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641B3DE326E846E055111F98C0E8211 /* ParameterEncoding.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576527FF2B2E2666ADE245346968931 /* Response.swift */; };
+		CFBD4BDD68023529A9ACE2A85EC65ADE /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E60ABDAB370CD55A9E51A1456E92CDC /* Banner.swift */; };
+		E049DB979ECFC5FE6E5AC45453DC05DF /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A740B2589BFDCC7D7ACBFC041D184A /* NKOColorPickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E8419609FFB577824008A25E67C5B0D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB371AFABF8BBD09878F2B89F0DD1F4E /* Notifications.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F5A60F69659F7D2B775833B5B86FB /* ResponseSerialization.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B27670B53ACA94B3AF51BA83C69C7C /* Alamofire.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920AA8D67ACAD38BA69BB93C9BB313C /* Notifications.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1713C52585906537CD9C9C4FEA8A5B2 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A3C29C5E168C8DBC7E80CCCD01E368 /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E44DA9C5A6793F0EC0A4D0BD0D1457BA /* PBXContainerItemProxy */ = {
+		C80207DDEC116017391F9EA68DA9E355 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B796CBC2F3A8CDB1BF32B4BC2F64B1B7;
-			remoteInfo = NKOColorPickerView;
+			remoteGlobalIDString = 0F3B36547C3C2CC3060475E614BCBF32;
+			remoteInfo = BRYXBanner;
 		};
-		F6E1F7FADBC7C8FB57ADE160054D8939 /* PBXContainerItemProxy */ = {
+		DCAA9648A3CF21B97DC8EC16B8DB2D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
+		F3C305F6D7CC2B8D7C2F45DB2E45DA56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B796CBC2F3A8CDB1BF32B4BC2F64B1B7;
+			remoteInfo = NKOColorPickerView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0662F9C526C1F755C54A4C2ECAF3BDB2 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		1104FA488103A1F6BDB33DCB1D5B0A67 /* NKOColorPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKOColorPickerView-umbrella.h"; sourceTree = "<group>"; };
+		00503DCC0F38C9B3EC79C0575011ECBA /* BRYXBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BRYXBanner.xcconfig; sourceTree = "<group>"; };
+		018D444280384D3ABA81E694F003BCB8 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		0E02FFEB6076F7799017C57242754BBF /* NKOColorPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKOColorPickerView-umbrella.h"; sourceTree = "<group>"; };
+		0F258CD93899864FE1D3B5ABBD8C5D2F /* BRYXBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BRYXBanner.modulemap; sourceTree = "<group>"; };
+		1009ACF694DF90E0EBC4FB200A3651FB /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		10F21ECA03BF57528A410F58130F2A6C /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		14E22E0038B29FB57F237EFDCCE4F7F1 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		1C2EEDA0188D0897A911515588C0C0EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C9D022F4A3658E549525EA5550DA6BC /* BRYXBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRYXBanner-umbrella.h"; sourceTree = "<group>"; };
+		1E60ABDAB370CD55A9E51A1456E92CDC /* Banner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Banner.swift; path = Pod/Classes/Banner.swift; sourceTree = "<group>"; };
 		1FA0D174C34953F1D71302729CA22994 /* Pods-Moody-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Moody-resources.sh"; sourceTree = "<group>"; };
-		2C26F1D76CE16DDEC9D80A8DC5DBA247 /* NKOColorPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKOColorPickerView.xcconfig; sourceTree = "<group>"; };
-		2F53813787CFFFD6725A4F20876E2C4B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		1FA9FBE85A7E704A565429D3C084E3B3 /* nko_brightness_guide.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nko_brightness_guide.png; path = Assets/nko_brightness_guide.png; sourceTree = "<group>"; };
+		2D0D2A6AB4D8ED63E18D19289F1B6788 /* BRYXBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BRYXBanner-dummy.m"; sourceTree = "<group>"; };
 		30C186257AEDA4DD433632A8C0EE3EB9 /* Pods-Moody-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Moody-dummy.m"; sourceTree = "<group>"; };
-		32455FEF9DAAF8C69B9D7828E64B5DDE /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		3176D4A090804CBA0A6F50B2E68D6D9E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		3449A1FB0809B4CF7DE8E170CE4A5A9F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		3AD66413EE76D411271825CFABB2AF33 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		359BB984E9CF5D27C22B8B6B7964F84B /* Pods_Moody.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Moody.framework; path = "Pods-Moody.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		362AB975A4FAD54A99AD3AE71EF252D4 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		3CBADAB41F566A96267A83642BEB6E90 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		45D3461DAC5E14486705DBE2931D5E80 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		474422EB93E4BEA40BC74047DE4925FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8999912686F22B2B5372A582F32DF5 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		4D4FD18CDC148FC7846B6B15BED060A5 /* BRYXBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRYXBanner-prefix.pch"; sourceTree = "<group>"; };
+		562D0D652B6A35F1BAFF5BB35E9711CD /* nko_brightness_guide@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "nko_brightness_guide@2x.png"; path = "Assets/nko_brightness_guide@2x.png"; sourceTree = "<group>"; };
 		593188FF491E5A2F9E8D17806ABD58E3 /* Pods-Moody.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Moody.release.xcconfig"; sourceTree = "<group>"; };
-		5AAC0186ADE20196D0910F56F0A765E6 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		6641464EFA40581BE2E99A26AB8CF748 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		679719FD0EB7D6A0C32A736862D2313E /* nko_colormap.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nko_colormap.png; path = Assets/nko_colormap.png; sourceTree = "<group>"; };
-		68D16426E0DC1E12B6CA864A63B91C4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AF947BB0D417C34E9C2C43818F3B34C /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		6C6C7AC2EEA267DDBEEDCBF7D8B5E050 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		6E83BF600CA06B9A1A55968011F60EDF /* NKOColorPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKOColorPickerView-dummy.m"; sourceTree = "<group>"; };
-		73B27670B53ACA94B3AF51BA83C69C7C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		65DE339F5507D8EFCB4BAFD125DE0A3B /* BRYXBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BRYXBanner.framework; path = BRYXBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6641B3DE326E846E055111F98C0E8211 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		6765F99FCE163A6C4568EF5B60A88E69 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		72A740B2589BFDCC7D7ACBFC041D184A /* NKOColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NKOColorPickerView.m; sourceTree = "<group>"; };
+		79AAEDAD16947267BC2541A3D2E041AC /* NKOColorPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKOColorPickerView.xcconfig; sourceTree = "<group>"; };
+		7D2ADB498A267DC4BB86956A2E3DB0D8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		814DFE14B19617000F83931D44771E99 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		814FEC6617993A255DA5FEEE421B5045 /* Pods-Moody-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Moody-acknowledgements.markdown"; sourceTree = "<group>"; };
-		81E86DA6F31B436B463519258E46CA38 /* NKOColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NKOColorPickerView.h; sourceTree = "<group>"; };
-		83723B00A1C2E1CB5635F23A732C202F /* NKOColorPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NKOColorPickerView.modulemap; sourceTree = "<group>"; };
-		8FBBF95E3B7A12FC2FF47479C5DD4E3C /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		901F5A60F69659F7D2B775833B5B86FB /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		928AF54A7D4471BB946C9295C233082F /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		842BE6D0E8D70738A5CB5144C920A9B3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9869168A7B5AD7BCA6A70B2FF27DB186 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		98D1F92501AEA732B9EF3BAE9C129BAF /* NKOColorPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKOColorPickerView-prefix.pch"; sourceTree = "<group>"; };
-		9AB0AE3EF44281924D1B3603C221483A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		9B2D26825E3552FF639946DD5B443FBF /* nko_brightness_guide.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nko_brightness_guide.png; path = Assets/nko_brightness_guide.png; sourceTree = "<group>"; };
+		93E22A036C048CD1886D332C5B95F26C /* nko_colormap.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nko_colormap.png; path = Assets/nko_colormap.png; sourceTree = "<group>"; };
+		95B3F7B74DD70F27D99F7CABB886E0BB /* NKOColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NKOColorPickerView.h; sourceTree = "<group>"; };
 		A200194696183357ECED58691A6FB196 /* Pods-Moody-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Moody-umbrella.h"; sourceTree = "<group>"; };
-		A8E60317A46F4896ECCC04C6AD0B2B62 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		B60B98DE1AD314578AD469040448A37A /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		B0CA66026743687C3210D8EDA6AC2088 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		B6EF6DFFCC18ABE937A50787CCA3C476 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		B942686264BD1E9BC30769B1781254C9 /* Pods-Moody-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Moody-frameworks.sh"; sourceTree = "<group>"; };
-		BDC26B7630DBC051DEF5EB67231E1C97 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		C24A59715AC02036650A6EBB57AD2E83 /* Pods_Moody.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Moody.framework; path = "Pods-Moody.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8F1A2533686397BDF3AB7AD156DDBAA /* NKOColorPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKOColorPickerView.framework; path = NKOColorPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB2C0F29AD8E6A698919B7462BDFBF35 /* NKOColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NKOColorPickerView.m; sourceTree = "<group>"; };
+		BA8E2E88B5AD27E2949661CC41825A3D /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		C1713C52585906537CD9C9C4FEA8A5B2 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		C576527FF2B2E2666ADE245346968931 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		C920AA8D67ACAD38BA69BB93C9BB313C /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		CA613E1C63BD5C9148B67F11BCD4B528 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		CC940D4AA12C32B666802D851E702A04 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		CD1873EEB6816F50CBFEF3D0FCB2243E /* NKOColorPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKOColorPickerView-prefix.pch"; sourceTree = "<group>"; };
 		D4BB22FFB46332A1BAB37C31CDC9F0AB /* Pods-Moody-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Moody-acknowledgements.plist"; sourceTree = "<group>"; };
-		DA7CB26525356486FD87C5B704B10A1A /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		DB371AFABF8BBD09878F2B89F0DD1F4E /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		D66AA9FCD71558EE343A581549E9EB74 /* NKOColorPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NKOColorPickerView.modulemap; sourceTree = "<group>"; };
 		DE6F1A140882DEDA9C96ACA00FDEA08D /* Pods-Moody.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Moody.modulemap"; sourceTree = "<group>"; };
-		E339D95D4397EDA98A7870C377E04ED0 /* nko_brightness_guide@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "nko_brightness_guide@2x.png"; path = "Assets/nko_brightness_guide@2x.png"; sourceTree = "<group>"; };
-		E4FDED7D298D99DEA66030AD26D7F20B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		E1632A085FD95A06DEF981643C790E50 /* NKOColorPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKOColorPickerView-dummy.m"; sourceTree = "<group>"; };
+		E5A3C29C5E168C8DBC7E80CCCD01E368 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E6FF2835A71C5BC3D89005043A239C15 /* Pods-Moody.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Moody.debug.xcconfig"; sourceTree = "<group>"; };
-		E8DAECA49B511915B3F6477F74D67662 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F3374A3A9D2D296365722D56170E362F /* NKOColorPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKOColorPickerView.framework; path = NKOColorPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F512834F39CB919E84601D22B686E538 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F983E08EED4B556F71B7D625733AFB58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FACFC5B5FC6A19380157F31E484ECB4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		FF8AA01802FD5592AAA76DB113A350DE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,19 +146,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C444658A692216428718CFEBDB11C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94D569BD94B20CB6787A423B182CE9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		354DE64D1AA7D8C8FC211C6BCA9466AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2B066A3A07A4763B781D059080931D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A871BB9A3552AE09DC586AD61863F23A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46045A900DF22CE31B3D406189AFD34D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,14 +181,81 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4A5E43B5651A3B4FB45FA49E051F9F40 /* Products */ = {
+		2578BBAFBE327BCE998C8956D46A6B00 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF8AA01802FD5592AAA76DB113A350DE /* Alamofire.framework */,
-				C8F1A2533686397BDF3AB7AD156DDBAA /* NKOColorPickerView.framework */,
-				C24A59715AC02036650A6EBB57AD2E83 /* Pods_Moody.framework */,
+				7D2ADB498A267DC4BB86956A2E3DB0D8 /* Alamofire.framework */,
+				65DE339F5507D8EFCB4BAFD125DE0A3B /* BRYXBanner.framework */,
+				F3374A3A9D2D296365722D56170E362F /* NKOColorPickerView.framework */,
+				359BB984E9CF5D27C22B8B6B7964F84B /* Pods_Moody.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		26827B1F84835DB595F6B88CC58BB19B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6765F99FCE163A6C4568EF5B60A88E69 /* Alamofire.modulemap */,
+				B6EF6DFFCC18ABE937A50787CCA3C476 /* Alamofire.xcconfig */,
+				14E22E0038B29FB57F237EFDCCE4F7F1 /* Alamofire-dummy.m */,
+				3176D4A090804CBA0A6F50B2E68D6D9E /* Alamofire-prefix.pch */,
+				3CBADAB41F566A96267A83642BEB6E90 /* Alamofire-umbrella.h */,
+				1C2EEDA0188D0897A911515588C0C0EA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		326BA78328FB9356F54B4FAFF0AB2D53 /* NKOColorPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				95B3F7B74DD70F27D99F7CABB886E0BB /* NKOColorPickerView.h */,
+				72A740B2589BFDCC7D7ACBFC041D184A /* NKOColorPickerView.m */,
+				8E426C8165D7ABF1793F3C089348600C /* Resources */,
+				B641DF7E8A9862439ABA729ABBD0D2C0 /* Support Files */,
+			);
+			name = NKOColorPickerView;
+			path = NKOColorPickerView;
+			sourceTree = "<group>";
+		};
+		49C043A09020393701671A6B77E35B86 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				4B8999912686F22B2B5372A582F32DF5 /* AFError.swift */,
+				E5A3C29C5E168C8DBC7E80CCCD01E368 /* Alamofire.swift */,
+				842BE6D0E8D70738A5CB5144C920A9B3 /* DispatchQueue+Alamofire.swift */,
+				B0CA66026743687C3210D8EDA6AC2088 /* MultipartFormData.swift */,
+				BA8E2E88B5AD27E2949661CC41825A3D /* NetworkReachabilityManager.swift */,
+				C920AA8D67ACAD38BA69BB93C9BB313C /* Notifications.swift */,
+				6641B3DE326E846E055111F98C0E8211 /* ParameterEncoding.swift */,
+				45D3461DAC5E14486705DBE2931D5E80 /* Request.swift */,
+				C576527FF2B2E2666ADE245346968931 /* Response.swift */,
+				C1713C52585906537CD9C9C4FEA8A5B2 /* ResponseSerialization.swift */,
+				814DFE14B19617000F83931D44771E99 /* Result.swift */,
+				CA613E1C63BD5C9148B67F11BCD4B528 /* ServerTrustPolicy.swift */,
+				018D444280384D3ABA81E694F003BCB8 /* SessionDelegate.swift */,
+				CC940D4AA12C32B666802D851E702A04 /* SessionManager.swift */,
+				362AB975A4FAD54A99AD3AE71EF252D4 /* TaskDelegate.swift */,
+				10F21ECA03BF57528A410F58130F2A6C /* Timeline.swift */,
+				1009ACF694DF90E0EBC4FB200A3651FB /* Validation.swift */,
+				26827B1F84835DB595F6B88CC58BB19B /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		5630D01C273D261C2013BCB8716EBF82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F258CD93899864FE1D3B5ABBD8C5D2F /* BRYXBanner.modulemap */,
+				00503DCC0F38C9B3EC79C0575011ECBA /* BRYXBanner.xcconfig */,
+				2D0D2A6AB4D8ED63E18D19289F1B6788 /* BRYXBanner-dummy.m */,
+				4D4FD18CDC148FC7846B6B15BED060A5 /* BRYXBanner-prefix.pch */,
+				1C9D022F4A3658E549525EA5550DA6BC /* BRYXBanner-umbrella.h */,
+				F512834F39CB919E84601D22B686E538 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BRYXBanner";
 			sourceTree = "<group>";
 		};
 		606E81E4196F2A63F4BD63B655855A2E /* Targets Support Files */ = {
@@ -177,22 +271,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				E3F74218B29EBE6B3557968CFB4FF491 /* Pods */,
-				4A5E43B5651A3B4FB45FA49E051F9F40 /* Products */,
+				EA32906551C08BFA89168293755EFACA /* Pods */,
+				2578BBAFBE327BCE998C8956D46A6B00 /* Products */,
 				606E81E4196F2A63F4BD63B655855A2E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8B087334C8CC505D56F62E464F920A27 /* NKOColorPickerView */ = {
+		8E426C8165D7ABF1793F3C089348600C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				81E86DA6F31B436B463519258E46CA38 /* NKOColorPickerView.h */,
-				CB2C0F29AD8E6A698919B7462BDFBF35 /* NKOColorPickerView.m */,
-				E70BBCDC4CD037509D5AC1609A1F3D88 /* Resources */,
-				B9341B29D9661D8B1F580E37C8FC7C8C /* Support Files */,
+				1FA9FBE85A7E704A565429D3C084E3B3 /* nko_brightness_guide.png */,
+				562D0D652B6A35F1BAFF5BB35E9711CD /* nko_brightness_guide@2x.png */,
+				93E22A036C048CD1886D332C5B95F26C /* nko_colormap.png */,
 			);
-			name = NKOColorPickerView;
-			path = NKOColorPickerView;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */ = {
@@ -224,77 +316,38 @@
 			path = "Target Support Files/Pods-Moody";
 			sourceTree = "<group>";
 		};
-		B9341B29D9661D8B1F580E37C8FC7C8C /* Support Files */ = {
+		B641DF7E8A9862439ABA729ABBD0D2C0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				68D16426E0DC1E12B6CA864A63B91C4E /* Info.plist */,
-				83723B00A1C2E1CB5635F23A732C202F /* NKOColorPickerView.modulemap */,
-				2C26F1D76CE16DDEC9D80A8DC5DBA247 /* NKOColorPickerView.xcconfig */,
-				6E83BF600CA06B9A1A55968011F60EDF /* NKOColorPickerView-dummy.m */,
-				98D1F92501AEA732B9EF3BAE9C129BAF /* NKOColorPickerView-prefix.pch */,
-				1104FA488103A1F6BDB33DCB1D5B0A67 /* NKOColorPickerView-umbrella.h */,
+				474422EB93E4BEA40BC74047DE4925FC /* Info.plist */,
+				D66AA9FCD71558EE343A581549E9EB74 /* NKOColorPickerView.modulemap */,
+				79AAEDAD16947267BC2541A3D2E041AC /* NKOColorPickerView.xcconfig */,
+				E1632A085FD95A06DEF981643C790E50 /* NKOColorPickerView-dummy.m */,
+				CD1873EEB6816F50CBFEF3D0FCB2243E /* NKOColorPickerView-prefix.pch */,
+				0E02FFEB6076F7799017C57242754BBF /* NKOColorPickerView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/NKOColorPickerView";
 			sourceTree = "<group>";
 		};
-		CCD6AA809D6E8868EE42C85AFCA03DF6 /* Alamofire */ = {
+		C081C8256A92BFFA9E7229C852543AB4 /* BRYXBanner */ = {
 			isa = PBXGroup;
 			children = (
-				6641464EFA40581BE2E99A26AB8CF748 /* AFError.swift */,
-				73B27670B53ACA94B3AF51BA83C69C7C /* Alamofire.swift */,
-				9AB0AE3EF44281924D1B3603C221483A /* DispatchQueue+Alamofire.swift */,
-				6C6C7AC2EEA267DDBEEDCBF7D8B5E050 /* MultipartFormData.swift */,
-				5AAC0186ADE20196D0910F56F0A765E6 /* NetworkReachabilityManager.swift */,
-				DB371AFABF8BBD09878F2B89F0DD1F4E /* Notifications.swift */,
-				6AF947BB0D417C34E9C2C43818F3B34C /* ParameterEncoding.swift */,
-				3449A1FB0809B4CF7DE8E170CE4A5A9F /* Request.swift */,
-				E4FDED7D298D99DEA66030AD26D7F20B /* Response.swift */,
-				901F5A60F69659F7D2B775833B5B86FB /* ResponseSerialization.swift */,
-				2F53813787CFFFD6725A4F20876E2C4B /* Result.swift */,
-				B60B98DE1AD314578AD469040448A37A /* ServerTrustPolicy.swift */,
-				3AD66413EE76D411271825CFABB2AF33 /* SessionDelegate.swift */,
-				9869168A7B5AD7BCA6A70B2FF27DB186 /* SessionManager.swift */,
-				928AF54A7D4471BB946C9295C233082F /* TaskDelegate.swift */,
-				BDC26B7630DBC051DEF5EB67231E1C97 /* Timeline.swift */,
-				E8DAECA49B511915B3F6477F74D67662 /* Validation.swift */,
-				D45BF695656F7913885A5FA6CB6E5F98 /* Support Files */,
+				1E60ABDAB370CD55A9E51A1456E92CDC /* Banner.swift */,
+				5630D01C273D261C2013BCB8716EBF82 /* Support Files */,
 			);
-			name = Alamofire;
-			path = Alamofire;
+			name = BRYXBanner;
+			path = BRYXBanner;
 			sourceTree = "<group>";
 		};
-		D45BF695656F7913885A5FA6CB6E5F98 /* Support Files */ = {
+		EA32906551C08BFA89168293755EFACA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0662F9C526C1F755C54A4C2ECAF3BDB2 /* Alamofire.modulemap */,
-				8FBBF95E3B7A12FC2FF47479C5DD4E3C /* Alamofire.xcconfig */,
-				A8E60317A46F4896ECCC04C6AD0B2B62 /* Alamofire-dummy.m */,
-				DA7CB26525356486FD87C5B704B10A1A /* Alamofire-prefix.pch */,
-				32455FEF9DAAF8C69B9D7828E64B5DDE /* Alamofire-umbrella.h */,
-				FACFC5B5FC6A19380157F31E484ECB4E /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		E3F74218B29EBE6B3557968CFB4FF491 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CCD6AA809D6E8868EE42C85AFCA03DF6 /* Alamofire */,
-				8B087334C8CC505D56F62E464F920A27 /* NKOColorPickerView */,
+				49C043A09020393701671A6B77E35B86 /* Alamofire */,
+				C081C8256A92BFFA9E7229C852543AB4 /* BRYXBanner */,
+				326BA78328FB9356F54B4FAFF0AB2D53 /* NKOColorPickerView */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		E70BBCDC4CD037509D5AC1609A1F3D88 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9B2D26825E3552FF639946DD5B443FBF /* nko_brightness_guide.png */,
-				E339D95D4397EDA98A7870C377E04ED0 /* nko_brightness_guide@2x.png */,
-				679719FD0EB7D6A0C32A736862D2313E /* nko_colormap.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,17 +370,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4AE8D073DFF0B8F7BF2D8A132AA77BB /* Headers */ = {
+		DF79F1922AB9A0FC9A25EBBF41EFBC87 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87CBFF89238B136CBCA92CFFD8A8165A /* Pods-Moody-umbrella.h in Headers */,
+				77AC5BD23F77DDFFAC89073E999B8494 /* Pods-Moody-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FB9EFE5D23BF6878733455A0FD6237 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139FF6DA1D05B90F2631E069C8D13832 /* BRYXBanner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BD1E399966C1498C57653EC9B0AEB0 /* Build configuration list for PBXNativeTarget "BRYXBanner" */;
+			buildPhases = (
+				9D79E16B04D0743401F742E1F773820C /* Sources */,
+				354DE64D1AA7D8C8FC211C6BCA9466AB /* Frameworks */,
+				E0FB9EFE5D23BF6878733455A0FD6237 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRYXBanner;
+			productName = BRYXBanner;
+			productReference = 65DE339F5507D8EFCB4BAFD125DE0A3B /* BRYXBanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		419327BD644B3BF6B6C8A65A5B33971E /* Pods-Moody */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D95187ED8993CA9ABF7B12AC397753 /* Build configuration list for PBXNativeTarget "Pods-Moody" */;
+			buildPhases = (
+				05EF47E3793C41CDC5D7A454F130F46D /* Sources */,
+				2C444658A692216428718CFEBDB11C30 /* Frameworks */,
+				DF79F1922AB9A0FC9A25EBBF41EFBC87 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607D859D2FA681DF1BF22D9F92F575CD /* PBXTargetDependency */,
+				B359E101AA2D71FA33686CBF3E787DF8 /* PBXTargetDependency */,
+				65838A27246ED6A57534FED7D1AFF081 /* PBXTargetDependency */,
+			);
+			name = "Pods-Moody";
+			productName = "Pods-Moody";
+			productReference = 359BB984E9CF5D27C22B8B6B7964F84B /* Pods_Moody.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -342,26 +440,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = FF8AA01802FD5592AAA76DB113A350DE /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AA80BA46C64758328FDCC789CC6786E6 /* Pods-Moody */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06B8B38EFA5C327D87360F5C723315AA /* Build configuration list for PBXNativeTarget "Pods-Moody" */;
-			buildPhases = (
-				D0BAE3FE1D9C8D576B431AC3C145E899 /* Sources */,
-				A871BB9A3552AE09DC586AD61863F23A /* Frameworks */,
-				F4AE8D073DFF0B8F7BF2D8A132AA77BB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F759577E5526496FCB6580A9C43505B7 /* PBXTargetDependency */,
-				6C51F53200BBDC081A1FCC6C6B262789 /* PBXTargetDependency */,
-			);
-			name = "Pods-Moody";
-			productName = "Pods-Moody";
-			productReference = C24A59715AC02036650A6EBB57AD2E83 /* Pods_Moody.framework */;
+			productReference = 7D2ADB498A267DC4BB86956A2E3DB0D8 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B796CBC2F3A8CDB1BF32B4BC2F64B1B7 /* NKOColorPickerView */ = {
@@ -379,7 +458,7 @@
 			);
 			name = NKOColorPickerView;
 			productName = NKOColorPickerView;
-			productReference = C8F1A2533686397BDF3AB7AD156DDBAA /* NKOColorPickerView.framework */;
+			productReference = F3374A3A9D2D296365722D56170E362F /* NKOColorPickerView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -399,13 +478,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4A5E43B5651A3B4FB45FA49E051F9F40 /* Products */;
+			productRefGroup = 2578BBAFBE327BCE998C8956D46A6B00 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */,
 				B796CBC2F3A8CDB1BF32B4BC2F64B1B7 /* NKOColorPickerView */,
-				AA80BA46C64758328FDCC789CC6786E6 /* Pods-Moody */,
+				419327BD644B3BF6B6C8A65A5B33971E /* Pods-Moody */,
 			);
 		};
 /* End PBXProject section */
@@ -430,6 +510,14 @@
 			files = (
 				6F334BD06C1F532C5BE0C2617B538C9B /* NKOColorPickerView-dummy.m in Sources */,
 				E049DB979ECFC5FE6E5AC45453DC05DF /* NKOColorPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05EF47E3793C41CDC5D7A454F130F46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82FEA7F499BB31EDA4A18E093C5B2E01 /* Pods-Moody-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,32 +546,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0BAE3FE1D9C8D576B431AC3C145E899 /* Sources */ = {
+		9D79E16B04D0743401F742E1F773820C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				164460F79E6443E3A6EC854B5F159B66 /* Pods-Moody-dummy.m in Sources */,
+				CFBD4BDD68023529A9ACE2A85EC65ADE /* Banner.swift in Sources */,
+				9CEE806C686E8F80DADE5C41C8D20F37 /* BRYXBanner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6C51F53200BBDC081A1FCC6C6B262789 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NKOColorPickerView;
-			target = B796CBC2F3A8CDB1BF32B4BC2F64B1B7 /* NKOColorPickerView */;
-			targetProxy = E44DA9C5A6793F0EC0A4D0BD0D1457BA /* PBXContainerItemProxy */;
-		};
-		F759577E5526496FCB6580A9C43505B7 /* PBXTargetDependency */ = {
+		607D859D2FA681DF1BF22D9F92F575CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = F6E1F7FADBC7C8FB57ADE160054D8939 /* PBXContainerItemProxy */;
+			targetProxy = DCAA9648A3CF21B97DC8EC16B8DB2D8A /* PBXContainerItemProxy */;
+		};
+		65838A27246ED6A57534FED7D1AFF081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NKOColorPickerView;
+			target = B796CBC2F3A8CDB1BF32B4BC2F64B1B7 /* NKOColorPickerView */;
+			targetProxy = F3C305F6D7CC2B8D7C2F45DB2E45DA56 /* PBXContainerItemProxy */;
+		};
+		B359E101AA2D71FA33686CBF3E787DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BRYXBanner;
+			target = 0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */;
+			targetProxy = C80207DDEC116017391F9EA68DA9E355 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		01F0C635932A864D2950DA80C9E56107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00503DCC0F38C9B3EC79C0575011ECBA /* BRYXBanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BRYXBanner/BRYXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRYXBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BRYXBanner/BRYXBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BRYXBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -532,7 +662,41 @@
 			};
 			name = Debug;
 		};
-		261578937756690C0E0A8407E1C30B5C /* Debug */ = {
+		448407A8F54EC23D3E0558BE14CDC511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00503DCC0F38C9B3EC79C0575011ECBA /* BRYXBanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BRYXBanner/BRYXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRYXBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BRYXBanner/BRYXBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BRYXBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5778C8F595C644BE32A07E2F1839B84B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6FF2835A71C5BC3D89005043A239C15 /* Pods-Moody.debug.xcconfig */;
 			buildSettings = {
@@ -617,7 +781,7 @@
 		};
 		7D072D0D174F12EAACC1862DA756E67A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FBBF95E3B7A12FC2FF47479C5DD4E3C /* Alamofire.xcconfig */;
+			baseConfigurationReference = B6EF6DFFCC18ABE937A50787CCA3C476 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -649,7 +813,7 @@
 			};
 			name = Release;
 		};
-		A7BE9EAD4EDC2A32318725DD7B620B82 /* Release */ = {
+		8058D5BCE13F4A6D7CB375E65797DD02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 593188FF491E5A2F9E8D17806ABD58E3 /* Pods-Moody.release.xcconfig */;
 			buildSettings = {
@@ -689,7 +853,7 @@
 		};
 		B0C4E131309EE8DAC0D65CAEFFE467E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C26F1D76CE16DDEC9D80A8DC5DBA247 /* NKOColorPickerView.xcconfig */;
+			baseConfigurationReference = 79AAEDAD16947267BC2541A3D2E041AC /* NKOColorPickerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -722,7 +886,7 @@
 		};
 		C9660A42FEDD040185578ADA021EC8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FBBF95E3B7A12FC2FF47479C5DD4E3C /* Alamofire.xcconfig */;
+			baseConfigurationReference = B6EF6DFFCC18ABE937A50787CCA3C476 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -757,7 +921,7 @@
 		};
 		EA40498B7696AD10FC40D71890CEFAAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C26F1D76CE16DDEC9D80A8DC5DBA247 /* NKOColorPickerView.xcconfig */;
+			baseConfigurationReference = 79AAEDAD16947267BC2541A3D2E041AC /* NKOColorPickerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -791,15 +955,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06B8B38EFA5C327D87360F5C723315AA /* Build configuration list for PBXNativeTarget "Pods-Moody" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				261578937756690C0E0A8407E1C30B5C /* Debug */,
-				A7BE9EAD4EDC2A32318725DD7B620B82 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -823,6 +978,24 @@
 			buildConfigurations = (
 				B0C4E131309EE8DAC0D65CAEFFE467E0 /* Debug */,
 				EA40498B7696AD10FC40D71890CEFAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BD1E399966C1498C57653EC9B0AEB0 /* Build configuration list for PBXNativeTarget "BRYXBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F0C635932A864D2950DA80C9E56107 /* Debug */,
+				448407A8F54EC23D3E0558BE14CDC511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1D95187ED8993CA9ABF7B12AC397753 /* Build configuration list for PBXNativeTarget "Pods-Moody" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5778C8F595C644BE32A07E2F1839B84B /* Debug */,
+				8058D5BCE13F4A6D7CB375E65797DD02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

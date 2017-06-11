@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.2.0)
+  - BRYXBanner (0.7.1)
   - NKOColorPickerView (0.5)
 
 DEPENDENCIES:
   - Alamofire
+  - BRYXBanner
   - NKOColorPickerView
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  BRYXBanner: 34eabf9c6c009f187948ca78a4f3bba3767d0f04
   NKOColorPickerView: 895ca86fe5bd16f27c311ce8f5888907efee29ad
 
-PODFILE CHECKSUM: 326a646f4257304ab74532a1ba1a5745d0f6832c
+PODFILE CHECKSUM: 81a996e8d7fafcdd2fc25a865c453d3943f19dba
 
 COCOAPODS: 1.2.1
