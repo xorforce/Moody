@@ -9,6 +9,7 @@
 import UIKit
 import NKOColorPickerView
 import Alamofire
+import BRYXBanner
 
 class MainVC: UIViewController{
 
@@ -62,22 +63,28 @@ class MainVC: UIViewController{
     @IBAction func doneButtonPressed(_ sender: Any) {
         if segmentedControl.selectedSegmentIndex == 0{
             color1 = getColor(color: pickerView1.color)
+            let banner = Banner(title: "Successful", subtitle: "The color was set successfully", backgroundColor: UIColor(red:48.00/255.0, green:174.0/255.0, blue:51.5/255.0, alpha:1.000))
+            banner.dismissesOnTap = true
             singleColorCall {
-                //do something
+                banner.show(duration: 2.0)
             }
         }
         
         if segmentedControl.selectedSegmentIndex == 1{
             color1 = getColor(color: pickerView1.color)
             color2 = getColor(color: pickerView2.color)
+            let banner1 = Banner(title: "Successful", subtitle: "The colors were set successfully", backgroundColor: UIColor(red:48.00/255.0, green:174.0/255.0, blue:51.5/255.0, alpha:1.000))
+            banner1.dismissesOnTap = true
             doubleColorCall {
-                //do something
+                banner1.show(duration: 2.0)
             }
         }
         
         if segmentedControl.selectedSegmentIndex == 2{
+            let banner2 = Banner(title: "Successful", subtitle: "The colors were set successfully", backgroundColor: UIColor(red:48.00/255.0, green:174.0/255.0, blue:51.5/255.0, alpha:1.000))
+            banner2.dismissesOnTap = true
             randomColorCall {
-                //do something
+                banner2.show(duration: 2.0)
             }
         }
     }
@@ -94,13 +101,13 @@ class MainVC: UIViewController{
         if segmentedControl.selectedSegmentIndex == 2{
             pickerView2.isHidden = false
             
-            randomColor1.r = arc4random_uniform(256)
-            randomColor1.g = arc4random_uniform(256)
-            randomColor1.b = arc4random_uniform(256)
+            randomColor1.r = CGFloat(arc4random_uniform(256))
+            randomColor1.g = CGFloat(arc4random_uniform(256))
+            randomColor1.b = CGFloat(arc4random_uniform(256))
             
-            randomColor2.r = arc4random_uniform(256)
-            randomColor2.g = arc4random_uniform(256)
-            randomColor2.b = arc4random_uniform(256)
+            randomColor2.r = CGFloat(arc4random_uniform(256))
+            randomColor2.g = CGFloat(arc4random_uniform(256))
+            randomColor2.b = CGFloat(arc4random_uniform(256))
             
             pickerView1.color = UIColor(red: randomColor1.r , green: randomColor1.g, blue: randomColor1.b, alpha: 1.0)
             pickerView1.color = UIColor(red: randomColor2.r , green: randomColor2.g, blue: randomColor2.b, alpha: 1.0)
@@ -108,21 +115,24 @@ class MainVC: UIViewController{
     }
     
     func singleColorCall(completed: @escaping completed){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color1.r)&g2=\(color1.g)&b2=\(color1.b)", method: .get).responseJSON { (response) in
+        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color1.r)&g2=\(color1.g)&b2=\(color1.b)", method: .get).responseJSON { (response) in
             _ = response.result
+            completed()
         }
     }
     
     func doubleColorCall(completed: @escaping completed){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color2.r)&g2=\(color2.g)&b2=\(color2.b)", method: .get).responseJSON { (response) in
+        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color2.r)&g2=\(color2.g)&b2=\(color2.b)", method: .get).responseJSON { (response) in
             _ = response.result
+            completed()
         }
     }
     
     func randomColorCall(completed: @escaping completed){
         
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(randomColor1.r)&g1=\(randomColor1.g)&b1=\(randomColor1.b)&r2=\(randomColor2.r))&g2=\(randomColor2.g)&b2=\(randomColor2.b)", method: .get).responseJSON { (response) in
+        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(randomColor1.r)&g1=\(randomColor1.g)&b1=\(randomColor1.b)&r2=\(randomColor2.r))&g2=\(randomColor2.g)&b2=\(randomColor2.b)", method: .get).responseJSON { (response) in
             _ = response.result
+            completed()
         }
     }
     
