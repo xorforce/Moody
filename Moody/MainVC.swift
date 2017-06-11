@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  Moody
 //
 //  Created by Bhagat Singh on 6/11/17.
@@ -10,7 +10,7 @@ import UIKit
 import NKOColorPickerView
 import Alamofire
 
-class ViewController: UIViewController{
+class MainVC: UIViewController{
 
     //IBOutlets
     @IBOutlet weak var doneButton: UIButton!
@@ -28,6 +28,8 @@ class ViewController: UIViewController{
     var color1 = color(r: 0, g: 0, b: 0)
     var color2 = color(r: 0, g: 0, b: 0)
     var tempColor = color(r: 0, g: 0, b: 0)
+    var randomColor1 = color(r: 0, g: 0, b: 0)
+    var randomColor2 = color(r: 0, g: 0, b: 0)
     
     var hardwareID : Double = 0
     typealias completed = () -> ()
@@ -74,14 +76,11 @@ class ViewController: UIViewController{
         }
         
         if segmentedControl.selectedSegmentIndex == 2{
-            color1 = getColor(color: pickerView1.color)
-            color2 = getColor(color: pickerView2.color)
             randomColorCall {
                 //do something
             }
         }
     }
-    
     
     @IBAction func segmentedControlChangedValue(_ sender: Any) {
         if segmentedControl.selectedSegmentIndex == 0{
@@ -94,8 +93,17 @@ class ViewController: UIViewController{
         
         if segmentedControl.selectedSegmentIndex == 2{
             pickerView2.isHidden = false
-            pickerView1.color = UIColor(red: CGFloat(arc4random_uniform(256)), green: CGFloat(arc4random_uniform(256)), blue: CGFloat(arc4random_uniform(256)), alpha: 1.0)
-            pickerView2.color = UIColor(red: CGFloat(arc4random_uniform(256)), green: CGFloat(arc4random_uniform(256)), blue: CGFloat(arc4random_uniform(256)), alpha: 1.0)
+            
+            randomColor1.r = arc4random_uniform(256)
+            randomColor1.g = arc4random_uniform(256)
+            randomColor1.b = arc4random_uniform(256)
+            
+            randomColor2.r = arc4random_uniform(256)
+            randomColor2.g = arc4random_uniform(256)
+            randomColor2.b = arc4random_uniform(256)
+            
+            pickerView1.color = UIColor(red: randomColor1.r , green: randomColor1.g, blue: randomColor1.b, alpha: 1.0)
+            pickerView1.color = UIColor(red: randomColor2.r , green: randomColor2.g, blue: randomColor2.b, alpha: 1.0)
         }
     }
     
@@ -112,7 +120,8 @@ class ViewController: UIViewController{
     }
     
     func randomColorCall(completed: @escaping completed){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color2.r)&g2=\(color2.g)&b2=\(color2.b)", method: .get).responseJSON { (response) in
+        
+        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(randomColor1.r)&g1=\(randomColor1.g)&b1=\(randomColor1.b)&r2=\(randomColor2.r))&g2=\(randomColor2.g)&b2=\(randomColor2.b)", method: .get).responseJSON { (response) in
             _ = response.result
         }
     }
