@@ -32,10 +32,12 @@ class ViewController: UIViewController{
     var b2 : CGFloat = 0
     var a2 : CGFloat = 0
     var hardwareID : Double = 0
+    typealias completed = () -> ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Initial Setup
         setup()
     }
     
@@ -60,15 +62,21 @@ class ViewController: UIViewController{
     @IBAction func doneButtonPressed(_ sender: Any) {
         if segmentedControl.selectedSegmentIndex == 0{
             getColor(color: pickerView1.color)
-            singleColorCall()
+            singleColorCall {
+                //do something
+            }
         }
         
         if segmentedControl.selectedSegmentIndex == 1{
-            doubleColorCall()
+            doubleColorCall {
+                //do something
+            }
         }
         
         if segmentedControl.selectedSegmentIndex == 2{
-            randomColorCall()
+            randomColorCall {
+                //do something
+            }
         }
     }
     
@@ -89,16 +97,22 @@ class ViewController: UIViewController{
         }
     }
     
-    func singleColorCall(){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r1)&g2=\(g1)&b2=\(b1)", method: .get)
+    func singleColorCall(completed: @escaping completed){
+        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r1)&g2=\(g1)&b2=\(b1)", method: .get).responseJSON { (response) in
+            let result = response.result
+        }
     }
     
-    func doubleColorCall(){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r2)&g2=\(g2)&b2=\(b2)", method: .get)
+    func doubleColorCall(completed: @escaping completed){
+        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r2)&g2=\(g2)&b2=\(b2)", method: .get).responseJSON { (response) in
+            let result = response.result
+        }
     }
     
-    func randomColorCall(){
-        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r2)&g2=\(g2)&b2=\(b2)", method: .get)
+    func randomColorCall(completed: @escaping completed){
+        Alamofire.request("https://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(r1)&g1=\(g1)&b1=\(b1)&r2=\(r2)&g2=\(g2)&b2=\(b2)", method: .get).responseJSON { (response) in
+            let result = response.result
+        }
     }
     
     func getColor(color: UIColor)->(Double, Double, Double){
