@@ -32,7 +32,7 @@ class MainVC: UIViewController{
     var randomColor1 = color(r: 0, g: 0, b: 0)
     var randomColor2 = color(r: 0, g: 0, b: 0)
     
-    var hardwareID : Double = 0
+    var hardwareID : String!
     typealias completed = () -> ()
     
     override func viewDidLoad() {
@@ -45,8 +45,9 @@ class MainVC: UIViewController{
     func setup(){
         
         //Picker View Setup
-        pickerView1.color = .red
-        pickerView2.color = .blue
+        pickerView1.color = UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: CGFloat(drand48()))
+        pickerView2.color = UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: CGFloat(drand48()))
+        
         
         //Segmented Control Setup
         segmentedControl.selectedSegmentIndex = 0
@@ -76,7 +77,7 @@ class MainVC: UIViewController{
             let banner1 = Banner(title: "Successful", subtitle: "The colors were set successfully", backgroundColor: UIColor(red:48.00/255.0, green:174.0/255.0, blue:51.5/255.0, alpha:1.000))
             banner1.dismissesOnTap = true
             doubleColorCall {
-                banner1.show(duration: 2.0)
+                banner1.show(duration: 1.0)
             }
         }
         
@@ -84,7 +85,7 @@ class MainVC: UIViewController{
             let banner2 = Banner(title: "Successful", subtitle: "The colors were set successfully", backgroundColor: UIColor(red:48.00/255.0, green:174.0/255.0, blue:51.5/255.0, alpha:1.000))
             banner2.dismissesOnTap = true
             randomColorCall {
-                banner2.show(duration: 2.0)
+                banner2.show(duration: 1.0)
             }
         }
     }
@@ -115,8 +116,19 @@ class MainVC: UIViewController{
     }
     
     func singleColorCall(completed: @escaping completed){
-        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color1.r)&g2=\(color1.g)&b2=\(color1.b)", method: .get).responseJSON { (response) in
-            _ = response.result
+        color1.r = color1.r * 255
+        print(Int(round(color1.r)))
+        
+        
+        color1.g = color1.g * 255
+        print(Int(round(color1.g)))
+        
+        color1.b = color1.b * 255
+        print(Int(round(color1.b)))
+        
+        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color1.r)&g2=\(color1.g)&b2=\(color1.b)", method: .get).responseJSON { (response) in
+            let result = response.result
+            print(result)
             completed()
         }
     }
@@ -130,8 +142,9 @@ class MainVC: UIViewController{
     
     func randomColorCall(completed: @escaping completed){
         
-        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(randomColor1.r)&g1=\(randomColor1.g)&b1=\(randomColor1.b)&r2=\(randomColor2.r))&g2=\(randomColor2.g)&b2=\(randomColor2.b)", method: .get).responseJSON { (response) in
-            _ = response.result
+        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&r1=\(randomColor1.r)&g1=\(randomColor1.g)&b1=\(randomColor1.b)&r2=\(randomColor2.r))&g2=\(randomColor2.g)&b2=\(randomColor2.b)", method: .get).responseJSON { (response) in
+            let result = response.result
+            print(result)
             completed()
         }
     }
