@@ -116,17 +116,11 @@ class MainVC: UIViewController{
     }
     
     func singleColorCall(completed: @escaping completed){
-        color1.r = color1.r * 255
-        print(Int(round(color1.r)))
+        color1.r = round(color1.r * 255)
+        color1.g = round(color1.g * 255)
+        color1.b = round(color1.b * 255)
         
-        
-        color1.g = color1.g * 255
-        print(Int(round(color1.g)))
-        
-        color1.b = color1.b * 255
-        print(Int(round(color1.b)))
-        
-        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color1.r)&g2=\(color1.g)&b2=\(color1.b)", method: .get).responseJSON { (response) in
+        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&r1=\(Int(color1.r))&g1=\(Int(color1.g))&b1=\(Int(color1.b))&r2=\(Int(color1.r))&g2=\(Int(color1.g))&b2=\(Int(color1.b))&HID=testdev", method: .get).responseJSON { (response) in
             let result = response.result
             print(result)
             completed()
@@ -134,15 +128,32 @@ class MainVC: UIViewController{
     }
     
     func doubleColorCall(completed: @escaping completed){
-        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&HID=\(hardwareID)&r1=\(color1.r)&g1=\(color1.g)&b1=\(color1.b)&r2=\(color2.r)&g2=\(color2.g)&b2=\(color2.b)", method: .get).responseJSON { (response) in
-            _ = response.result
-            completed()
-        }
+        color1.r = round(color1.r * 255)
+        color1.g = round(color1.g * 255)
+        color1.b = round(color1.b * 255)
+        
+        color2.r = round(color2.r * 255)
+        color2.g = round(color2.g * 255)
+        color2.b = round(color2.b * 255)
+        
+        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&r1=\(Int(color1.r))&g1=\(Int(color1.g))&b1=\(Int(color1.b))&r2=\(Int(color2.r))&g2=\(Int(color2.g))&b2=\(Int(color2.b))&HID=testdev", method: .get).responseJSON { (response) in
+            let result = response.result
+            print(result)
+            completed()        }
     }
     
     func randomColorCall(completed: @escaping completed){
         
-        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&r1=\(randomColor1.r)&g1=\(randomColor1.g)&b1=\(randomColor1.b)&r2=\(randomColor2.r))&g2=\(randomColor2.g)&b2=\(randomColor2.b)", method: .get).responseJSON { (response) in
+        randomColor1.r = round(randomColor1.r * 255)
+        randomColor1.g = round(randomColor1.g * 255)
+        randomColor1.b = round(randomColor1.b * 255)
+        
+        randomColor2.r = round(randomColor2.r * 255)
+        randomColor2.g = round(randomColor2.g * 255)
+        randomColor2.b = round(randomColor2.b * 255)
+        
+        
+        Alamofire.request("http://akshaybaweja.com/mood.php?request=set&r1=\(Int(randomColor1.r))&g1=\(Int(randomColor1.g))&b1=\(Int(randomColor1.b))&r2=\(Int(randomColor2.r)))&g2=\(Int(randomColor2.g))&b2=\(Int(randomColor2.b))&HID=testdev", method: .get).responseJSON { (response) in
             let result = response.result
             print(result)
             completed()
