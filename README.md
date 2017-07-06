@@ -1,7 +1,7 @@
 
 ![alt_tag](https://user-images.githubusercontent.com/14857735/27014992-3545c8fe-4f21-11e7-8773-35dcfd5bc403.png)<br><br>
 
-Moody is an artistic smart mood lamp to provide ambient lighting according to the user's needs. This repository contains the iOS Application for the lamp to change the colors. It has single, double and random color modes. The android application for this project is coming soon. <br><br>
+Moody is an artistic smart mood lamp to provide ambient lighting according to the user's needs. This repository contains the iOS Application for the lamp to change the colors. It has single, double and random color modes. The android application for this project is written by [Jasmine Sodhi](https://github.com/JasmineSodhi). The link of the repository is [Moody-Android](https://github.com/JasmineSodhi/Moody) <br><br>
 
 ### Screenshots:<br>
 ![alt_tag](https://user-images.githubusercontent.com/14857735/27086558-2f5c549e-5070-11e7-8156-e8b06ea73682.png)
