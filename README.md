@@ -20,4 +20,3 @@ Adding a settings pane to incorporate hardwareID. Currently the project is testi
 1. Swift 3.0.
 2. Xcode 8.0+.
 3. Cocoapods 1.2.0 (Beta), should work with the stable release as well, although not tested.
-
